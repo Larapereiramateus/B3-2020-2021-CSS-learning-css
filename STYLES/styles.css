@@ -1,5 +1,20 @@
 H1 {
   color: red;
   font-family:sans-serif;
-  
+}
+
+H2 {
+  color: grey;
+  font-size: 30px;
+  font-family: helvetica;
+}
+
+p {
+  Font-size: 16px;
+  font-family: helvetica;
+}
+
+img{
+  min-width: 100px;
+  max-height: 300px;
 }
