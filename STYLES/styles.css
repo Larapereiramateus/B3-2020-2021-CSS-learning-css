@@ -1,30 +1,3 @@
-H1 {
-  color: purple;
-  font-family:sans-serif;
-}
-
-H2 {
-  color: grey;
-  font-size: 30px;
-  font-family: helvetica;
-}
-
-H3 {
-  color: Pink;
-  font-size: 20px;
-  font-family: helvetica;
-}
-
-p {
-  Font-size: 16px;
-  font-family: helvetica;
-}
-
-img{
-  width:100px;
-  height: 100px;
-}
-
 body {
 	background: #212121;
 	font-size:22px;
@@ -99,15 +72,13 @@ nav a {
 nav a:hover {
 	background-color: #000000;
 }
-
-/* Hide Dropdowns by Default */
+/* Cacher les listes déroulantes par défaut */
 nav ul ul {
 	display: none;
 	position: absolute;
-	top: 60px; /* the height of the main nav */
+	top: 60px;
 }
 
-/* Display Dropdowns on Hover */
 nav ul li:hover > ul {
 	display:inherit;
 }
@@ -130,3 +101,30 @@ nav ul ul ul li {
 /* Change this in order to change the Dropdown symbol */
 li > a:after { content:  ' +'; }
 li > a:only-child:after { content: ''; }
+
+H1 {
+  color: white;
+  font-family:sans-serif;
+}
+
+H2 {
+  color: grey;
+  font-size: 30px;
+  font-family: helvetica;
+}
+
+H3 {
+  color: Pink;
+  font-size: 20px;
+  font-family: helvetica;
+}
+
+p {
+  Font-size: 16px;
+  font-family: helvetica;
+}
+
+img{
+  width:100px;
+  height: 100px;
+}
