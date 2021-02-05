@@ -72,28 +72,7 @@ nav a {
 nav a:hover {
 	background-color: #000000;
 }
-/* Cacher les listes déroulantes par défaut */
-nav ul ul {
-	display: none;
-	position: absolute;
-	top: 60px;
-}
 
 nav ul li:hover > ul {
 	display:inherit;
-}
-
-/* Fisrt Tier Dropdown */
-nav ul ul li {
-	width:170px;
-	float:none;
-	display:list-item;
-	position: relative;
-}
-
-/* Second, Third and more Tiers	*/
-nav ul ul ul li {
-	position: relative;
-	top:-60px;
-	left:170px;
 }
