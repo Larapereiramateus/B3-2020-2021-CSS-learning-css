@@ -3,47 +3,26 @@ html{
 }
 
 /*Titres*/
-<<<<<<< HEAD
-=======
 h3 {
-	font-size: 30px;
+	font-size: 20px;
 	text-align: center;
 	color: #FFF;
 }
->>>>>>> parent of 11fed91... essai
 h1 {
 	margin-top: 80px;
 	text-align:center;
-	font-size:40px;
+	font-size:30px;
 	}
 
-<<<<<<< HEAD
 h2{
   font-size: 30px;
-=======
-h2 {
   margin: 10%  10%  10%  10%
->>>>>>> parent of 11fed91... essai
   font: helvetica;
 }
 
 h3{
   margin: 5%  5%  5%  5%;
   font: helvetica;
-  font-size: 20px;
-  text-align: center;
-  color: #FFF;
-}
-
-.homepage {
-  font-size: 30px;
-  margin-top: 5px;
-  margin-bottom: 25px;
-  font: helvetica;
-}
-
-.projet {
-
 }
 /*Titres*/
 
@@ -84,7 +63,7 @@ img{
 	position: absolute;
 	top: 325px;
 	left: 50%;
-	transform: translateX(50%);
+	transform: translateX(80%);
 	width: 4px;
 	background-color: #CD5C5C;
   height:calc(100% - 325px);
