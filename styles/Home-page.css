@@ -32,3 +32,12 @@ nav ul li:hover > ul {
 	display:inherit;
 }
 /* Menu */
+
+h1 a {
+	color: red;
+	text-decoration: none;
+}
+
+h1 a:visited {
+	color: yellow;
+}
