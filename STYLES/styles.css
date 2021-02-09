@@ -32,6 +32,7 @@ body {
 	line-height: 32px;
 	color: #ffffff;
 	font-family: 'helvetica', sans-serif;
+  position:relative;
 	}
 .body-home{
   height: 100%;
@@ -58,19 +59,20 @@ img{
 /* timeline */
 .timeline:before {
 	content: '';
-	position: fixed;
-	top: 350px;
+	position: absolute;
+	top: 325px;
 	left: 50%;
-	bottom: 0px;
-	transform: translateX(-50%);
+	transform: translateX(50%);
 	width: 4px;
 	background-color: #CD5C5C;
+  height:calc(100% - 325px);
+  z-index: -1;
 }
 .timeline {
 	max-width: 1000px;
 	width: calc(100% - 80px);
+  height: 100%;
 	margin: 0 auto;
-	position: relative;
 	left: -5px;
 }
 .block {
@@ -83,13 +85,13 @@ img{
 .block:not(:first-child) {
 	margin-top: -60px;
 }
-.annee {
+.annee, .grospt{
 	font-size: 30px;
 	margin-bottom: 12px;
 	position: relative;
 	color: #CD5C5C;
 }
-.annee:before {
+.annee:before, .grospt:before {
 	content: '';
 	position: absolute;
 	width: 8px;
@@ -102,6 +104,7 @@ img{
 	right: -73px;
 	z-index: 1000;
 }
+
 .grospt:before {
 	width: 24px;
 	height: 24px;
