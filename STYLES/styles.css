@@ -4,7 +4,7 @@ html{
 
 /*Titres*/
 h3 {
-	font-size: 30px;
+	font-size: 20px;
 	text-align: center;
 	color: #FFF;
 }
@@ -14,7 +14,8 @@ h1 {
 	font-size:30px;
 	}
 
-h2 {
+h2{
+  font-size: 30px;
   margin: 10%  10%  10%  10%
   font: helvetica;
 }
@@ -62,7 +63,7 @@ img{
 	position: absolute;
 	top: 325px;
 	left: 50%;
-	transform: translateX(50%);
+	transform: translateX(80%);
 	width: 4px;
 	background-color: #CD5C5C;
   height:calc(100% - 325px);
