@@ -170,7 +170,7 @@ footer {
   width: 100%;
  }
 
-/*section*/
+/*section personnalités*/
 .ligne1{
   display: flex;
   align-items: flex-start;
@@ -186,8 +186,9 @@ footer {
   align-items: flex-start;
   justify-content: center;
 }
+/*section personnalités*/
 
-/*div*/
+/*div photo + nom*/
 .gauche{
   padding: 15px;
   margin: 10px;
@@ -199,4 +200,110 @@ footer {
 .droite{
   padding: 15px;
   margin: 10px;
+}
+/*div photo + nom*/
+
+/*popup personnalités*/
+.box {
+  width: 40%;
+  margin: 0 auto;
+  padding: 35px;
+  background-clip: padding-box;
+  text-align: center;
+}
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #212121;
+  border: 2px solid #DEB887;
+  background: #DEB887;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #CD5C5C;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 60%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+.popup h2 {
+  margin-top: 0;
+  color: #CD5C5C;
+  font-family: helvetica, Arial, sans-serif;
+  text-align: center;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #CD5C5C;
+}
+.popup .close:hover {
+  color: #333;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+  color: black;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+/*popup personnalités*/
+
+/*Mentions légales*/
+.monprofil h2{
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  padding: 5px;
+  color: #CD5C5C;
+  font-family: helvetica,sans-serif;
+
+}
+img.moi{ 
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  padding: 5px;
+  width: 225px;
+  height: 350px;
+}
+
+.texte{
 }
