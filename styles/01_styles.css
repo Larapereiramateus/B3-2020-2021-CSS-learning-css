@@ -4,17 +4,14 @@ html{
 
 /*Titres*/
 h1 {
-	margin-top: 80px;
 	text-align:center;
 	font-size:30px;
 	}
-
 h2{
   font-size: 30px;
   margin: 10%  10%  10%  10%
   font: helvetica;
 }
-
 h3{
   margin: 5%  5%  5%  5%;
   font: helvetica;
@@ -38,7 +35,6 @@ body {
 }
 .body-home main {
   min-height:100%;
-  margin: 80px;
 }
 main{
   display: flex;
@@ -49,22 +45,31 @@ main{
   margin: 50px;
   overflow: hidden;
 }
+/*Corps de la page*/
 
 img{
   width:300px;
   height: 300px;
 }
 
+/*Evolution*/
+.explication{
+  margin-right: 15%;
+  margin-left: 15%;
+  text-align: justify;
+
+}
+
 /* timeline */
 .timeline:before {
 	content: '';
 	position: absolute;
-	top: 325px;
+	top: 425px;
 	left: 50%;
 	transform: translateX(80%);
 	width: 4px;
 	background-color: #CD5C5C;
-  height:calc(100% - 325px);
+  height:calc(100% - 425px);
   z-index: -1;
 }
 .timeline {
@@ -76,13 +81,17 @@ img{
 }
 .block {
 	width: calc(50% - 80px);
-	float: left;
 	padding: 20px;
 	clear: both;
-	text-align: right;
+	text-align: justify;
+  float: left;
 }
 .block:not(:first-child) {
 	margin-top: -60px;
+}
+.block img{
+  height: 100%;
+  width: 100%;
 }
 .annee, .grospt{
 	font-size: 30px;
@@ -113,7 +122,7 @@ img{
 	color: #aaa;
 }
 .block:nth-child(2n) {
-	text-align: left;
+	text-align: justify;
 	float: right;
 }
 .block:nth-child(2n) .annee:before {
@@ -151,57 +160,47 @@ img{
 }
 /* timeline */
 
-/* Sections home page*/
-#chris #evolution #personnalite {
-  display: flex;
-  flex-flow: column-reverse;
-  justify-content: space-around;
-  align-items: center;
-  padding: inherit;
-}
-/* Sections home page*/
-
-footer {
-  color: #ffffff;
-  height: 50px;
-  background: #CD5C5C;
-  text-align: center;
-  display: flex;
-  justify-content:space-around;
-  align-items:flex-end;
-  width: 100%;
- }
-
 /*section personnalités*/
 .ligne1{
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  margin: 15px;
 }
 .ligne2{
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  margin: 15px;
 }
 .ligne3{
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  margin: 15px;
 }
 /*section personnalités*/
 
 /*div photo + nom*/
 .gauche{
   padding: 15px;
-  margin: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 .centre{
   padding: 15px;
-  margin: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 .droite{
   padding: 15px;
-  margin: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.gauche, .centre, .droite h2{
+  text-align: center;
+  color: #CD5C5C;
 }
 /*div photo + nom*/
 
@@ -209,7 +208,7 @@ footer {
 .box {
   width: 40%;
   margin: 0 auto;
-  padding: 35px;
+  padding: 15px;
   background-clip: padding-box;
   text-align: center;
 }
@@ -297,21 +296,59 @@ footer {
   color: #CD5C5C;
   font-family: helvetica,sans-serif;
 }
-.moi{ 
+img.moi{ 
+  display: flex;
+  justify-content: center;
   margin-left: : 150px;
   margin-right: 150px;
   padding: 5px;
   width: 225px;
   height: 350px;
+
 }
 .texte{
   display: flex;
   margin-top: 0px;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 200px;
+  margin-right: 200px;
   padding: 10px;
   text-align: justify;
 }
 /*Mentions légales*/
 
 /*Chris*/
+.chriscoyier{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  border: 2px;
+  border-color: #CD5C5C;
+}
+.chriscoyier h2{
+  color: #CD5C5C;
+
+}
+.bio{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.biographie{
+  margin-right: 80px;
+  margin-left: 80px;
+  text-align: justify;
+}
+/*Chris*/
+
+
+
+footer {
+  color: #ffffff;
+  height: 50px;
+  background: #CD5C5C;
+  text-align: center;
+  display: flex;
+  justify-content:space-around;
+  align-items:flex-end;
+  width: 100%;
+ }
