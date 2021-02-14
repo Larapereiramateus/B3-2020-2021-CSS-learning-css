@@ -29,17 +29,12 @@ body {
 	color: #ffffff;
 	font-family: 'helvetica', sans-serif;
   position:relative;
-  margin-top: 5px;
-  margin-left: 30px;
-  margin-right: 30px;
-  padding: 15px;
 	}
 .body-home{
   height: 100%;
 }
 .body-home main {
   min-height:100%;
-  margin: 80px;
 }
 main{
   display: flex;
@@ -57,16 +52,24 @@ img{
   height: 300px;
 }
 
+/*Evolution*/
+.explication{
+  margin-right: 15%;
+  margin-left: 15%;
+  text-align: justify;
+
+}
+
 /* timeline */
 .timeline:before {
 	content: '';
 	position: absolute;
-	top: 325px;
+	top: 425px;
 	left: 50%;
 	transform: translateX(80%);
 	width: 4px;
 	background-color: #CD5C5C;
-  height:calc(100% - 325px);
+  height:calc(100% - 425px);
   z-index: -1;
 }
 .timeline {
@@ -78,13 +81,17 @@ img{
 }
 .block {
 	width: calc(50% - 80px);
-	float: left;
 	padding: 20px;
 	clear: both;
-	text-align: right;
+	text-align: justify;
+  float: left;
 }
 .block:not(:first-child) {
 	margin-top: -60px;
+}
+.block img{
+  height: 100%;
+  width: 100%;
 }
 .annee, .grospt{
 	font-size: 30px;
@@ -115,7 +122,7 @@ img{
 	color: #aaa;
 }
 .block:nth-child(2n) {
-	text-align: left;
+	text-align: justify;
 	float: right;
 }
 .block:nth-child(2n) .annee:before {
@@ -289,18 +296,21 @@ img{
   color: #CD5C5C;
   font-family: helvetica,sans-serif;
 }
-.moi{ 
+img.moi{ 
+  display: flex;
+  justify-content: center;
   margin-left: : 150px;
   margin-right: 150px;
   padding: 5px;
   width: 225px;
   height: 350px;
+
 }
 .texte{
   display: flex;
   margin-top: 0px;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 200px;
+  margin-right: 200px;
   padding: 10px;
   text-align: justify;
 }
