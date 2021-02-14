@@ -4,17 +4,14 @@ html{
 
 /*Titres*/
 h1 {
-	margin-top: 80px;
 	text-align:center;
 	font-size:30px;
 	}
-
 h2{
   font-size: 30px;
   margin: 10%  10%  10%  10%
   font: helvetica;
 }
-
 h3{
   margin: 5%  5%  5%  5%;
   font: helvetica;
@@ -32,6 +29,10 @@ body {
 	color: #ffffff;
 	font-family: 'helvetica', sans-serif;
   position:relative;
+  margin-top: 5px;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 15px;
 	}
 .body-home{
   height: 100%;
@@ -49,6 +50,7 @@ main{
   margin: 50px;
   overflow: hidden;
 }
+/*Corps de la page*/
 
 img{
   width:300px;
@@ -151,57 +153,47 @@ img{
 }
 /* timeline */
 
-/* Sections home page*/
-#chris #evolution #personnalite {
-  display: flex;
-  flex-flow: column-reverse;
-  justify-content: space-around;
-  align-items: center;
-  padding: inherit;
-}
-/* Sections home page*/
-
-footer {
-  color: #ffffff;
-  height: 50px;
-  background: #CD5C5C;
-  text-align: center;
-  display: flex;
-  justify-content:space-around;
-  align-items:flex-end;
-  width: 100%;
- }
-
 /*section personnalités*/
 .ligne1{
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  margin: 15px;
 }
 .ligne2{
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  margin: 15px;
 }
 .ligne3{
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  margin: 15px;
 }
 /*section personnalités*/
 
 /*div photo + nom*/
 .gauche{
   padding: 15px;
-  margin: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 .centre{
   padding: 15px;
-  margin: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 .droite{
   padding: 15px;
-  margin: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.gauche, .centre, .droite h2{
+  text-align: center;
+  color: #CD5C5C;
 }
 /*div photo + nom*/
 
@@ -209,7 +201,7 @@ footer {
 .box {
   width: 40%;
   margin: 0 auto;
-  padding: 35px;
+  padding: 15px;
   background-clip: padding-box;
   text-align: center;
 }
@@ -315,3 +307,38 @@ footer {
 /*Mentions légales*/
 
 /*Chris*/
+.chriscoyier{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  border: 2px;
+  border-color: #CD5C5C;
+}
+.chriscoyier h2{
+  color: #CD5C5C;
+
+}
+.bio{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.biographie{
+  margin-right: 80px;
+  margin-left: 80px;
+  text-align: justify;
+}
+/*Chris*/
+
+
+
+footer {
+  color: #ffffff;
+  height: 50px;
+  background: #CD5C5C;
+  text-align: center;
+  display: flex;
+  justify-content:space-around;
+  align-items:flex-end;
+  width: 100%;
+ }
