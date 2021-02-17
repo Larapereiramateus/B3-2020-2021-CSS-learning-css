@@ -47,10 +47,13 @@ main{
 }
 /*Corps de la page*/
 
+/*images*/
 img{
   width:300px;
   height: 300px;
+  object-fit: cover;
 }
+/*images*/
 
 /*Evolution*/
 .explication{
@@ -60,7 +63,7 @@ img{
 
 }
 
-/* timeline */
+/*Timeline*/
 .timeline:before {
 	content: '';
 	position: absolute;
@@ -92,6 +95,7 @@ img{
 .block img{
   height: 100%;
   width: 100%;
+  background-size: cover;
 }
 .annee, .grospt{
 	font-size: 30px;
@@ -132,6 +136,7 @@ img{
 	transform: translate(-8px, -50%);
 }
 
+/*Timeline média-queries*/
 @media screen and (max-width: 600px) {
 	body::before {
 		left: 40px;
@@ -158,9 +163,42 @@ img{
 		left: -59px;
 	}
 }
-/* timeline */
+/*Timeline média-queries*/
+
+@media (max-width:677px){
+body{
+
+}
+}
+
+/*section personnalités média-queries*/
+@media (min-width: 678px){
+.ligne1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 15px;
+  }
+.ligne2{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 15px;
+  }
+.ligne3{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 15px;
+  }
+
+}
+
+/*section personnalités média-queries*/
 
 /*section personnalités*/
+@media (min-width: 1024px){
+
 .ligne1{
   display: flex;
   align-items: flex-start;
@@ -179,7 +217,10 @@ img{
   justify-content: center;
   margin: 15px;
 }
+}
 /*section personnalités*/
+
+
 
 /*div photo + nom*/
 .gauche{
@@ -206,7 +247,6 @@ img{
 
 /*popup personnalités*/
 .box {
-  width: 40%;
   margin: 0 auto;
   padding: 15px;
   background-clip: padding-box;
@@ -234,11 +274,11 @@ img{
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
 }
 .overlay:target {
+  transition: opacity 500ms;
   visibility: visible;
   opacity: 1;
 }
@@ -250,7 +290,7 @@ img{
   border-radius: 5px;
   width: 60%;
   position: relative;
-  transition: all 5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 .popup h2 {
   margin-top: 0;
@@ -284,33 +324,32 @@ img{
   .popup{
     width: 70%;
   }
-}
 /*popup personnalités*/
 
 /*Mentions légales*/
 .monprofil{
   display: flex;
   justify-content: center;
-  margin: 5px;
+  margin-top: 5px;
+  margin-bottom: 15px;
   padding: 5px;
   color: #CD5C5C;
-  font-family: helvetica,sans-serif;
+  font-family: 'helvetica',sans-serif;
 }
-img.moi{ 
-  display: flex;
-  justify-content: center;
-  margin-left: : 150px;
-  margin-right: 150px;
-  padding: 5px;
+.picture--me{ 
+  background-size: cover;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   width: 225px;
   height: 350px;
-
+  display: block;
 }
 .texte{
   display: flex;
   margin-top: 0px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 350px;
+  margin-right: 350px;
   padding: 10px;
   text-align: justify;
 }
@@ -327,7 +366,6 @@ img.moi{ 
 }
 .chriscoyier h2{
   color: #CD5C5C;
-
 }
 .bio{
     margin-left: 20%;
@@ -339,8 +377,6 @@ img.moi{ 
   text-align: justify;
 }
 /*Chris*/
-
-
 
 footer {
   color: #ffffff;
