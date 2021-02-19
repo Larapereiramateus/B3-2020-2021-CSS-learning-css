@@ -55,150 +55,7 @@ img{
 }
 /*images*/
 
-/*Evolution*/
-.explication{
-  margin-right: 15%;
-  margin-left: 15%;
-  text-align: justify;
-
-}
-
-/*Timeline*/
-.timeline:before {
-	content: '';
-	position: absolute;
-	top: 425px;
-	left: 50%;
-	transform: translateX(80%);
-	width: 4px;
-	background-color: #CD5C5C;
-  height:calc(100% - 425px);
-  z-index: -1;
-}
-.timeline {
-	max-width: 1000px;
-	width: calc(100% - 80px);
-  height: 100%;
-	margin: 0 auto;
-	left: -5px;
-}
-.block {
-	width: calc(50% - 80px);
-	padding: 20px;
-	clear: both;
-	text-align: justify;
-  float: left;
-}
-.block:not(:first-child) {
-	margin-top: -60px;
-}
-.block img{
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-}
-.annee, .grospt{
-	font-size: 30px;
-	margin-bottom: 12px;
-	position: relative;
-	color: #CD5C5C;
-}
-.annee:before, .grospt:before {
-	content: '';
-	position: absolute;
-	width: 8px;
-	height: 8px;
-	border: 4px solid #CD5C5C;
-	background-color: #CD5C5C;
-	border-radius: 100%;
-	top: 50%;
-	transform: translateY(-50%);
-	right: -73px;
-	z-index: 1000;
-}
-
-.grospt:before {
-	width: 24px;
-	height: 24px;
-	transform: translate(8px, -50%);
-}
-.Description {
-	color: #aaa;
-}
-.block:nth-child(2n) {
-	text-align: justify;
-	float: right;
-}
-.block:nth-child(2n) .annee:before {
-	left: -63px;
-}
-.block:nth-child(2n) .grospt:before {
-	transform: translate(-8px, -50%);
-}
-
-/*Timeline média-queries*/
-@media screen and (max-width: 600px) {
-	body::before {
-		left: 40px;
-	}
-	.annee:before {
-		left: -43px;
-	}
-	.block {
-		width: calc(100% - 60px);
-		text-align: left;
-		padding-left: 40px;
-	}
-	.block:nth-child(2n) {
-		text-align: left;
-		float: left;
-	}
-	.block:nth-child(2n) .annee:before {
-		left: -43px;
-	}
-	.block:not(:first-child) {
-		margin-top: 0;
-	}
-	.grospt:before {
-		left: -59px;
-	}
-}
-/*Timeline média-queries*/
-
-@media (max-width:677px){
-body{
-
-}
-}
-
-/*section personnalités média-queries*/
-@media (min-width: 678px){
-.ligne1{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 15px;
-  }
-.ligne2{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 15px;
-  }
-.ligne3{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 15px;
-  }
-
-}
-
-/*section personnalités média-queries*/
-
 /*section personnalités*/
-@media (min-width: 1024px){
-
 .ligne1{
   display: flex;
   align-items: flex-start;
@@ -217,10 +74,6 @@ body{
   justify-content: center;
   margin: 15px;
 }
-}
-/*section personnalités*/
-
-
 
 /*div photo + nom*/
 .gauche{
@@ -317,6 +170,7 @@ body{
   color: black;
 }
 
+/*
 @media screen and (max-width: 700px){
   .box{
     width: 70%;
@@ -377,6 +231,80 @@ body{
   text-align: justify;
 }
 /*Chris*/
+
+/*MEDIA QUERIES MOBILE*/
+@media (max-width:677px){
+  body{
+    background-color: red;
+    }
+
+    /*section personnalités*/
+    .ligne1{
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      margin: 15px;
+    }
+    .ligne2{
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      margin: 15px;
+    }
+    .ligne3{
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      margin: 15px;
+    }
+
+    /*div photo + nom*/
+    .gauche{
+      padding: 15px;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+    .centre{
+      padding: 15px;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+    .droite{
+      padding: 15px;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+    .gauche, .centre, .droite h2{
+      text-align: center;
+      color: #CD5C5C;
+    }
+
+    /*FIN DE LA MEDIA*/
+  }
+  /*FIN MEDIA QUERIES MOBILE*/
+
+/*MEDIA QUERIES TABLETTE*/
+@media (min-width: 678px){
+  body{
+    background-color: yellow;
+    }
+
+    /*FIN DE LA MEDIA*/
+    }
+    /*FIN MEDIA QUERIES TABLETTE*/
+
+/*MEDIA QUERIES DESKTOP*/
+@media (min-width: 1024px){
+  body{
+    background-color: #212121;
+
+
+    }
+
+    /*FIN DE LA MEDIA*/
+    }
+    /*FIN MEDIA QUERIES DESKTOP*/
+
 
 footer {
   color: #ffffff;
