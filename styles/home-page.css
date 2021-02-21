@@ -1,4 +1,4 @@
-/* CONSTRUCTION MENU BURGER */
+/*//////// CONSTRUCTION MENU BURGER ////////*/
 		a{
 		  color:#FFFFF0;
 			font-size: 20px;
@@ -82,9 +82,9 @@
 		    transform: rotate(45deg);
 		    top: 0;
 		}
-/* FIN CONSTRUCTION MENU BURGER */
+/*//////// FIN CONSTRUCTION MENU BURGER ////////*/
 
-/* MENU VERSION MOBILE */
+		/* MENU VERSION MOBILE */
 		@media (min-width:1023px) {
 		    .header .menu {
 		        width: 90%;
@@ -102,7 +102,7 @@
 		    }
 		    /*fin media query*/
 		}
-/* MENU VERSION DESKTOP */
+		/* MENU VERSION DESKTOP */
 		@media (min-width:1024px) {
 		    /*Box du menu*/
 		    .header{
@@ -177,75 +177,13 @@
 					justify-content: center;
 					text-align: justify;
 				}
-				.compo h2{
+				.compo h2 {
 					display: flex;
 					justify-content: center;
 					text-align: center;
 					font-size: 20px;
+					padding: 10px;
 					color: #CD5C5C;
-				}
-		}
-/* SPLIT SCREEN MOBILE */
-		@media (max-width: 677px){
-				/*part 1*/
-			  .parent1 {
-					display: flex;
-			    flex-direction: column-reverse;
-					justify-content: center;
-					font-family: helvetica, sans-serif;
-					padding: 5px;
-					margin: 5px;
-			  }
-			  .item {
-			    width: auto;
-					background: #212121;
-				 	height: 200px;
-			  }
-			  .last{
-			    background: #FFFFF0;
-					min-height: 150px;
-			  }
-				.css {
-					width:100%;
-					object-fit: cover;
-				}
-				.last p {
-					display: flex;
-					margin: 30px;
-					justify-content: center;
-					text-align: justify;
-					color: black;
-				}
-				.last h2{
-					display: flex;
-					justify-content: center;
-					text-align: center;
-					font-size: 20px;
-					color: #CD5C5C;
-				}
-				/*part 2*/
-				.partie1 {
-					display: flex;
-			    flex-direction: column;
-				  font-family: helvetica, sans-serif;
-					padding: 5px;
-					margin: 5px;
-				}
-				.ecv {
-					width:100%;
-					object-fit: cover;
-				}
-				.compo {
-					background: #FFFFF0;
-					min-height: 300px;
-					color: #222;
-					width: auto;
-				}
-				.compolast {
-				  width: auto;
-					color: #222;
-				 background: #FFFFF0;
-				 height: 300px;
 				}
 		}
 /* SPLIT SCREEN TABELETTE */
@@ -289,6 +227,7 @@
 			.partie1 {
 				display: flex;
 				justify-content: center;
+				font-family: helvetica, sans-serif;
 				padding: 5px;
 				margin: 5px;
 			}
@@ -320,8 +259,84 @@
 				color: #CD5C5C;
 			}
 		}
+/* SPLIT SCREEN MOBILE */
+		@media (max-width: 677px){
+						/*part 1*/
+					  .parent1 {
+							display: flex;
+					    flex-direction: column-reverse;
+							justify-content: center;
+							font-family: helvetica, sans-serif;
+							padding: 5px;
+							margin: 5px;
+					  }
+					  .item {
+					    width: auto;
+							background: #212121;
+						 	height: 200px;
+					  }
+					  .last{
+					    background: #FFFFF0;
+							min-height: 150px;
+					  }
+						.css {
+							width:100%;
+							object-fit: cover;
+						}
+						.last p {
+							display: flex;
+							margin: 30px;
+							justify-content: center;
+							text-align: justify;
+							color: black;
+						}
+						.last h2{
+							display: flex;
+							justify-content: center;
+							text-align: center;
+							font-size: 20px;
+							color: #CD5C5C;
+						}
+						/*part 2*/
+						.partie1 {
+							display: flex;
+					    flex-direction: column;
+						  font-family: helvetica, sans-serif;
+							padding: 5px;
+							margin: 5px;
+						}
+						.ecv {
+							width:100%;
+							object-fit: cover;
+						}
+						.compo {
+							background: #FFFFF0;
+							min-height: 300px;
+							color: #222;
+							width: auto;
+						}
+						.compolast {
+						  width: auto;
+							color: #222;
+						 background: #FFFFF0;
+						 height: 300px;
+						}
+						.compo h2{
+							display: flex;
+							justify-content: center;
+							text-align: center;
+							font-size: 20px;
+							color: #CD5C5C;
+						}
+						.compo p {
+								display: flex;
+								margin: 30px;
+								justify-content: center;
+								text-align: justify;
+							}
+				}
 
-/* SECTIONS */
+/*//////// SECTIONS ////////*/
 		h1 a {
 			color: #DEB887;
 			text-decoration: none;
@@ -361,6 +376,7 @@
 				.sections { 
 					display: flex;
 					text-align: center;
+					border: 2px solid #DEB887;
 					}
 		}
 /* TABLETTE SECTIONS */
@@ -381,6 +397,7 @@
 					}
 		}
 
+/*//////// FOOTER ////////*/
 footer {
   color: #ffffff;
   height: 100%;
