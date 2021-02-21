@@ -340,50 +340,11 @@ html{
     }
 
     /* TABLETTE CHRIS*/
-@media (max-width: 1023px){
 
+@media (max-width:1024px) {
   body{
-    background: brown;
+    background-color: red;
   }
-  .tout{
-    display: flex;
-    flex-direction: column;
-  }
-  .chriscoyier{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 20px;
-  }
-  .intro{
-    border: 2px solid #CD5C5C;
-    padding: 20px;
-    background: #FFFFF0;
-  }
-  .chriscoyier h2{
-    color: #CD5C5C;
-    text-align: center;
-    padding: 10px;
-  }
-  .cri{
-    display: block;
-    margin-right: 5px;
-    margin-left: 15px;
-  }
-  .bio{
-    color: #212121;
-    padding: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .biographie{
-    margin-right: 30px;
-    margin-left: 30px;
-    text-align: justify;
-    padding: 20px;
-  }
-
 }
 
 footer {
