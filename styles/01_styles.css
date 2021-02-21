@@ -2,309 +2,350 @@ html{
   height: 100;
 }
 
-/*Titres*/
-h1 {
-	text-align:center;
-	font-size:30px;
-	}
-h2{
-  font-size: 30px;
-  margin: 10%  10%  10%  10%
-  font: helvetica;
-}
-h3{
-  margin: 5%  5%  5%  5%;
-  font: helvetica;
-  font-size: 20px;
-  text-align: center;
-  color: #FFF;
-}
-/*Titres*/
-
-/*Corps de la page*/
-body {
-	background: #212121;
-	font-size:16px;
-	line-height: 32px;
-	color: #ffffff;
-	font-family: 'helvetica', sans-serif;
-  position:relative;
-	}
-.body-home{
-  height: 100%;
-}
-.body-home main {
-  min-height:100%;
-}
-main{
-  display: flex;
-  margin: 50px;
-  align-items: center;
-}
-.accueil{
-  margin: 50px;
-  overflow: hidden;
-}
-/*Corps de la page*/
-
-/*images*/
-img{
-  width:300px;
-  height: 300px;
-  object-fit: cover;
-}
-/*images*/
-
-/*section personnalités*/
-.ligne1{
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  margin: 15px;
-}
-.ligne2{
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  margin: 15px;
-}
-.ligne3{
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  margin: 15px;
-}
-
-/*div photo + nom*/
-.gauche{
-  padding: 15px;
-  margin-left: 40px;
-  margin-right: 40px;
-}
-.centre{
-  padding: 15px;
-  margin-left: 40px;
-  margin-right: 40px;
-}
-.droite{
-  padding: 15px;
-  margin-left: 40px;
-  margin-right: 40px;
-}
-
-.gauche, .centre, .droite h2{
-  text-align: center;
-  color: #CD5C5C;
-}
-/*div photo + nom*/
-
-/*popup personnalités*/
-.box {
-  margin: 0 auto;
-  padding: 15px;
-  background-clip: padding-box;
-  text-align: center;
-}
-.button {
-  font-size: 1em;
-  padding: 10px;
-  color: #212121;
-  border: 2px solid #DEB887;
-  background: #DEB887;
-  border-radius: 20px/50px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-}
-.button:hover {
-  background: #CD5C5C;
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  visibility: hidden;
-  opacity: 0;
-}
-.overlay:target {
-  transition: opacity 500ms;
-  visibility: visible;
-  opacity: 1;
-}
-
-.popup {
-  margin: 70px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 60%;
-  position: relative;
-  transition: all 1s ease-in-out;
-}
-.popup h2 {
-  margin-top: 0;
-  color: #CD5C5C;
-  font-family: helvetica, Arial, sans-serif;
-  text-align: center;
-}
-.popup .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #CD5C5C;
-}
-.popup .close:hover {
-  color: #333;
-}
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
-  color: black;
-}
-
-/*
-@media screen and (max-width: 700px){
-  .box{
-    width: 70%;
-  }
-  .popup{
-    width: 70%;
-  }
-/*popup personnalités*/
-
-/*Mentions légales*/
-.monprofil{
-  display: flex;
-  justify-content: center;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  padding: 5px;
-  color: #CD5C5C;
-  font-family: 'helvetica',sans-serif;
-}
-.picture--me{ 
-  background-size: cover;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 225px;
-  height: 350px;
-  display: block;
-}
-.texte{
-  display: flex;
-  margin-top: 0px;
-  margin-left: 350px;
-  margin-right: 350px;
-  padding: 10px;
-  text-align: justify;
-}
-/*Mentions légales*/
-
-/*Chris*/
-.chriscoyier{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
-  border: 2px;
-  border-color: #CD5C5C;
-}
-.chriscoyier h2{
-  color: #CD5C5C;
-}
-.bio{
-    margin-left: 20%;
-    margin-right: 20%;
-}
-.biographie{
-  margin-right: 80px;
-  margin-left: 80px;
-  text-align: justify;
-}
-/*Chris*/
-
-/*MEDIA QUERIES MOBILE*/
-@media (max-width:677px){
-  body{
-    background-color: red;
+/*//////// TITRES ////////*/
+    h1 {
+    	text-align:center;
+    	font-size:30px;
+    	}
+    h2{
+      font-size: 30px;
+      margin: 10%  10%  10%  10%
+      font: helvetica;
     }
-
-    /*section personnalités*/
-    .ligne1{
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      margin: 15px;
-    }
-    .ligne2{
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      margin: 15px;
-    }
-    .ligne3{
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      margin: 15px;
-    }
-
-    /*div photo + nom*/
-    .gauche{
-      padding: 15px;
-      margin-left: 40px;
-      margin-right: 40px;
-    }
-    .centre{
-      padding: 15px;
-      margin-left: 40px;
-      margin-right: 40px;
-    }
-    .droite{
-      padding: 15px;
-      margin-left: 40px;
-      margin-right: 40px;
-    }
-    .gauche, .centre, .droite h2{
+    h3{
+      margin: 5%  5%  5%  5%;
+      font: helvetica;
+      font-size: 20px;
       text-align: center;
+      color: #FFF;
+    }
+
+/*//////// CORPS DE LA PAGE ////////*/
+    body {
+    	background: #212121;
+    	font-size:16px;
+    	line-height: 32px;
+    	color: #ffffff;
+    	font-family: 'helvetica', sans-serif;
+      position:relative;
+    	}
+    .body-home{
+      height: 100%;
+    }
+    .body-home main {
+      min-height:100%;
+    }
+    main{
+      display: flex;
+      margin: 50px;
+      align-items: center;
+    }
+    .accueil{
+      margin: 50px;
+      overflow: hidden;
+    }
+
+/*//////// IMAGES ////////*/
+    img{
+      width:300px;
+      height: 300px;
+      object-fit: cover;
+    }
+
+/*//////// PERSONNALITES GRILLE ////////*/
+    /*MEDIA QUERIES DESKTOP*/
+        .ligne1{
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          margin: 15px;
+        }
+        .ligne2{
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          margin: 15px;
+        }
+        .ligne3{
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          margin: 15px;
+        }
+        .gauche{
+          padding: 15px;
+          margin-left: 40px;
+          margin-right: 40px;
+        }
+        .centre{
+          padding: 15px;
+          margin-left: 40px;
+          margin-right: 40px;
+        }
+        .droite{
+          padding: 15px;
+          margin-left: 40px;
+          margin-right: 40px;
+        }
+        .gauche, .centre, .droite h2{
+          text-align: center;
+          color: #CD5C5C;
+        }
+
+    /*MEDIA QUERIES MOBILE*/
+@media (max-width: 677px){
+        /*//////// PERSONNALITES GRILLE ////////*/
+        .ligne1, .ligne2, .ligne3{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          margin: 15px;
+        }
+        /*//////// DIV PHOTO + NOM ////////*/
+        .gauche{
+          padding: 15px;
+          margin-left: 40px;
+          margin-right: 40px;
+        }
+        .centre{
+          padding: 15px;
+          margin-left: 40px;
+          margin-right: 40px;
+        }
+        .droite{
+          padding: 15px;
+          margin-left: 40px;
+          margin-right: 40px;
+        }
+        .gauche, .centre, .droite h2{
+          text-align: center;
+          color: #CD5C5C;
+        }
+}
+    /*MEDIA QUERIES TABLETTE*/
+@media (max-width: 1023px){
+  /*//////// PERSONNALITES GRILLE ////////*/
+        .ligne1{
+          display: flex;
+          flex-wrap: wrap;
+          align-items: flex-start;
+          justify-content: left;
+          margin: 15px;
+        }
+        .ligne2{
+          display: flex;
+          flex-wrap: wrap;
+          align-items: flex-start;
+          justify-content: left;
+          margin: 15px;
+        }
+        .ligne3{
+          display: flex;
+          flex-wrap: wrap;
+          align-items: flex-start;
+          justify-content: left;
+          margin: 15px;
+        }
+      /*//////// DIV PHOTO + NOM ////////*/
+        .gauche{
+          padding: 15px;
+          margin-left: 40px;
+          margin-right: 40px;
+        }
+        .centre{
+          padding: 15px;
+          margin-left: 40px;
+          margin-right: 40px;
+        }
+        .droite{
+          padding: 15px;
+          margin-left: 40px;
+          margin-right: 40px;
+        }
+        .gauche, .centre, .droite h2{
+          text-align: center;
+          color: #CD5C5C;
+        }
+}
+
+/*//////// POPUP PERSONNALITES ////////*/
+    .box {
+      margin: 0 auto;
+      padding: 15px;
+      background-clip: padding-box;
+      text-align: center;
+    }
+    .button {
+      font-size: 1em;
+      padding: 10px;
+      color: #212121;
+      border: 2px solid #DEB887;
+      background: #DEB887;
+      border-radius: 20px/50px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+    }
+    .button:hover {
+      background: #CD5C5C;
+    }
+    .overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      visibility: hidden;
+      opacity: 0;
+    }
+    .overlay:target {
+      transition: opacity 500ms;
+      visibility: visible;
+      opacity: 1;
+    }
+    .popup {
+      margin: 70px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 5px;
+      width: 60%;
+      position: relative;
+      transition: all 1s ease-in-out;
+    }
+    .popup h2 {
+      margin-top: 0;
+      color: #CD5C5C;
+      font-family: helvetica, Arial, sans-serif;
+      text-align: center;
+    }
+    .popup .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      transition: all 200ms;
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
       color: #CD5C5C;
     }
+    .popup .close:hover {
+      color: #333;
+    }
+    .popup .content {
+      max-height: 30%;
+      overflow: auto;
+      color: black;
+    }
 
-    /*FIN DE LA MEDIA*/
-  }
-  /*FIN MEDIA QUERIES MOBILE*/
-
-/*MEDIA QUERIES TABLETTE*/
+/*//////// MENTIONS LEGALES ////////*/
+    .carte{
+      display: flex;
+      justify-content: center;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      padding: 5px;
+      color: #CD5C5C;
+    }
+    .monprofil{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      padding: 5px;
+      color: #CD5C5C;
+    }
+    .monprofil h2{
+      padding: 5px;
+      margin: 5px;
+      font-weight: bold;
+    }
+    .picture-me{ 
+      background-size: cover;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 225px;
+      height: 350px;
+      display: block;
+    }
+    .texte{
+      display: flex;
+      margin-top: 0px;
+      margin-left: 150px;
+      margin-right: 150px;
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-bottom: 100px;
+      text-align: justify;
+    }
+    /* MOBILE MENTIONS */
+@media (max-width: 677px){
+    .texte{
+      display: flex;
+      text-align: justify;
+      margin: 10px;
+    }
+}
+    /* TABLETTE MENTIONS */
 @media (min-width: 678px){
-  body{
-    background-color: yellow;
+    .texte{
+      display: flex;
+      text-align: justify;
+      margin: 10px;
     }
+}
 
-    /*FIN DE LA MEDIA*/
-    }
-    /*FIN MEDIA QUERIES TABLETTE*/
-
-/*MEDIA QUERIES DESKTOP*/
+/*//////// Chris ////////*/
+    /* DESKTOP CHRIS*/
 @media (min-width: 1024px){
+    .tout{
+      display: flex;
+    }
+    .chriscoyier{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 20px;
+    }
+    .intro{
+      border: 2px solid #CD5C5C;
+      padding: 20px;
+      background: #FFFFF0;
+    }
+    .chriscoyier h2{
+      color: #CD5C5C;
+      text-align: center;
+      padding: 10px;
+    }
+    .cri{
+      display: block;
+      margin-right: 5px;
+      margin-left: 15px;
+    }
+    .bio{
+      color: #212121;
+      padding: 15px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .biographie{
+      margin-right: 30px;
+      margin-left: 30px;
+      text-align: justify;
+      padding: 20px;
+    }
+
+    /* TABLETTE CHRIS*/
+
+@media (max-width:1024px) {
   body{
-    background-color: #212121;
-
-
-    }
-
-    /*FIN DE LA MEDIA*/
-    }
-    /*FIN MEDIA QUERIES DESKTOP*/
-
+    background-color: red;
+  }
+}
 
 footer {
   color: #ffffff;
