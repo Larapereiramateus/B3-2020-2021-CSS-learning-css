@@ -20,12 +20,12 @@
         .timeline:before {
         	content: '';
         	position: absolute;
-        	top: 560px;
+        	top: 455px;
         	left: 50%;
         	transform: translateX(80%);
         	width: 4px;
         	background-color: #CD5C5C;
-          height:calc(100% - 560px);
+          height:calc(100% - 455px);
           z-index: -1;
           }
         .timeline {
